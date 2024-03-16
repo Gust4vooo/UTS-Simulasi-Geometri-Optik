@@ -196,11 +196,11 @@ def atur_gerakan():
     if keys[pygame.K_UP]:
         tinggi_benda += 3
         tinggi_benda = min(tinggi_benda, screen.get_height() // 2 - 10)  # Batas atas
-        input_box_tinggi.text = str(jarak_benda)
+        input_box_tinggi.text = str(tinggi_benda)
     if keys[pygame.K_DOWN]:
         tinggi_benda -= 3
         tinggi_benda = max(tinggi_benda, -screen.get_height() // 2 + 340)  # Batas bawah
-        input_box_tinggi.text = str(jarak_benda)
+        input_box_tinggi.text = str(tinggi_benda)
 
     # Perbarui jarak bayangan dan tinggi bayangan
     try:
